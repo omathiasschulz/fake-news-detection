@@ -1,0 +1,361 @@
+
+
+
+
+
+### ACM
+
+# Link
+https://dl.acm.org/advsearch.cfm?query=%28%252Bdata%20%252Banalysis%20%252Bfake%20%252Bnews%29&within=owners.owner=HOSTED&dte=2008&bfr=2019#
+# Link 2
+https://dlnext.acm.org/search/advanced
+
+# Query
+"query": { (+data +analysis +fake +news) }
+"filter": {"publicationYear":{ "gte":2008, "lte":2019 }},
+{owners.owner=HOSTED}
+
+# Result: 15
+
+
+
+
+
+### SCIENCE DIRECT
+# Find articles with these terms:
+data analisys fake news
+# Year(s):
+2008-2019
+# Result: 0
+
+
+
+### Capes
+É exato data science
+É exato fake news
+Tipo de material: Artigos
+Data Inicial: 2008
+Data Final: 2019
+
+# Result 101
+
+https://www-periodicos-capes-gov-br.ez317.periodicos.capes.gov.br/
+
+
+
+
+
+30/10
+##### Periodico Capes
+
+### Busca
+Busca: Contém "Fake news"
+Idioma: Inglês
+Data Inicial: 2008
+Data Inicial: 2019
+# 48.342 Resultados
+
+### Busca
+Busca: Contém "Fake news" and "Data science"
+Idioma: Inglês
+Data Inicial: 2008
+Data Inicial: 2019
+Disciplina: Ciência da Computação
+# 5.269 Resultados
+
+### Busca
+Busca: Contém "Fake news" and "Data science"
+Idioma: Inglês
+Data de publicação: Últimos 10 anos
+Data Inicial: 2008
+Data Inicial: 2019
+Disciplina: Ciência da Computação
+# 5.083 Resultados
+
+### Busca
+Busca: Contém "Fake news" and "Data science"
+Idioma: Inglês
+Data de publicação: Últimos 10 anos
+Data Inicial: 2008
+Data Inicial: 2019
+Disciplina: Ciência da Computação
+Tópico: Computer Science
+# 603 Resultados
+
+
+### Busca
+Busca: É exato "Fake news" and "Data science"
+Idioma: Inglês
+Data de publicação: Últimos 10 anos
+Data Inicial: 2008
+Data Inicial: 2019
+Disciplina: Ciência da Computação
+# 101 Resultados
+
+### Busca
+Busca: É exato "Fake news" and "Data science"
+Idioma: Inglês
+Data de publicação: Últimos 10 anos
+Data Inicial: 2008
+Data Inicial: 2019
+Disciplina: Ciência da Computação
+Tópico: Computer Science
+# 18 Resultados
+Trouxe 18 resultados com textos no qual o título não tem nada a ver com a análise de dados voltada a fake news
+
+### Busca
+Busca: No título "Fake news" and Contém "Data science"
+Idioma: Inglês
+Data de publicação: Últimos 10 anos
+Data Inicial: 2008
+Data Inicial: 2019
+Disciplina: Ciência da Computação
+# 7 Resultados
+Trouxe artigos interessantes, mas sem foco na análise de dados
+
+### Busca
+Busca: No título "Fake news" and Contém "Data analysis"
+Idioma: Inglês
+Data de publicação: Últimos 10 anos
+Data Inicial: 2008
+Data Inicial: 2019
+Disciplina: Ciência da Computação
+# 14 Resultados
+Trouxe bons resultados, mas ainda sem foco na análise de dados
+
+PDF - Capes
+
+
+
+
+##### Springer - https://link.springer.com/advanced-search
+
+### Busca
+With all of the words: fake news data science analysis
+Documents published between: 2008 and 2019
+# 373 Resultados
+
+### Busca
+With all of the words: fake news data science analysis
+Documents published between: 2008 and 2019
+Language: English
+# 371 Resultados
+
+### Busca
+With all of the words: fake news data science analysis
+Documents published between: 2008 and 2019
+Language: English
+Discipline: Computer Science
+# 127 Resultados
+
+### Busca
+With all of the words: fake news data science analysis
+Documents published between: 2008 and 2019
+Language: English
+Discipline: Computer Science
+Include Preview-Only content: True
+# 1,471 Resultados
+
+### Busca
+With all of the words: fake news data science analysis
+With the exact phrase: data analysis
+Documents published between: 2008 and 2019
+Language: English
+Discipline: Computer Science
+Include Preview-Only content: True
+# 241 Resultados
+
+### Busca
+With all of the words: fake news data science analysis
+With the exact phrase: data analysis
+Documents published between: 2008 and 2019
+Language: English
+Discipline: Computer Science
+Include Preview-Only content: True
+Content Type: Article
+# 55 Resultados
+
+### Busca
+With all of the words: fake news data science analysis
+With the exact phrase: data analysis
+Documents published between: 2008 and 2019
+Language: English
+Discipline: Computer Science
+Include Preview-Only content: True
+Content Type: Article
+Subdiscipline: Computer Science, general
+# 12 Resultados
+# Link: https://link.springer.com/search?date-facet-mode=between&facet-language=%22En%22&facet-sub-discipline=%22Computer+Science%2C+general%22&facet-end-year=2019&facet-start-year=2008&query=fake+AND+news+AND+data+AND+science+AND+analysis+AND+%22data+analysis%22&showAll=true&facet-discipline=%22Computer+Science%22&facet-content-type=%22Article%22
+
+### Busca
+With all of the words: fake news data science analysis
+With the exact phrase: data analysis
+Documents published between: 2008 and 2019
+Language: English
+Discipline: Computer Science
+Include Preview-Only content: True
+Content Type: Article
+Subdiscipline: Data Mining and Knowledge Discovery
+# 12 Resultados
+# Link: https://link.springer.com/search?date-facet-mode=between&facet-language=%22En%22&facet-end-year=2019&facet-start-year=2008&query=fake+AND+news+AND+data+AND+science+AND+analysis+AND+%22data+analysis%22&showAll=true&facet-discipline=%22Computer+Science%22&facet-content-type=%22Article%22&facet-sub-discipline=%22Data+Mining+and+Knowledge+Discovery%22
+
+PDF - Springer
+
+
+
+
+31/10
+
+##### ACM
+https://dl.acm.org/advsearch.cfm?coll=DL&dl=ACM#
+
+### Busca
+Select item from: The ACM Guide to Computing Literature
+Where: Título matches all of the following words or phrases data analysis
+Where: Título matches all of the following words or phrases fake news
+Where: Publication year is in the range 2008 to 2019
+# 0 Resultados
+
+### Busca
+Select item from: The ACM Guide to Computing Literature
+Where: Título matches all of the words or phrases following fake news
+Where: Any field matches all of the words following or phrases data analysis
+Where: Publication year is in the range 2008 to 2019
+# 11 Resultados
+Títulos interessantes
+
+### Busca
+Select item from: The ACM Guide to Computing Literature
+Where: Título matches all of the words or phrases following fake news
+Where: Any field matches all of the words following or phrases data science
+Where: Publication year is in the range 2008 to 2019
+# 15 Resultados
+Títulos interessantes
+
+### Busca
+Select item from: The ACM Guide to Computing Literature
+Where: Título matches all of the words or phrases following fake news
+Where: Any field matches all of the words following or phrases data
+Where: Any field matches any of the words following or phrases science analysis
+Where: Publication year is in the range 2008 to 2019
+# 35 Resultados
+Títulos interessantes
+Link: https://dl.acm.org/results.cfm?query=acmdlTitle:(%252Bfake%20%252Bnews)%20%20AND%20(%252Bdata%20science%20analysis)&within=owners.owner=GUIDE&filtered=&dte=2008&bfr=2019
+
+PDF - ACM
+
+
+
+##### Science Direct
+
+### Busca
+Find articles with these terms: fake news data analysis science
+Year(s): 2008-2019
+Article types: Review articles, research articles, data articles
+# 1048 Resultados
+
+### Busca
+Find articles with these terms: fake news data analysis science
+Title: fake news
+Year(s): 2008-2019
+Article types: Review articles, research articles, data articles
+# 27 Resultados
+Alguns artigos bons
+Link: https://www.sciencedirect.com/search/advanced?qs=fake%20news%20data%20analysis%20science&date=2008-2019&title=fake%20news&articleTypes=REV%2CFLA%2CDAT&show=25&sortBy=relevance
+
+PDF - Science Direct
+
+
+
+### Capes - 14 resultados
+### ACM - 34 resultados
+### Science direct - 27 resultados
+### Springer - 12 resultados
+
+Sci hub => Baixar artigos gratis
+
+
+
+RBRH
+ACM
+
+
+Springer
+DOAJ
+IEEE
+ScienceDirect
+
+
+
+
+
+
+
+
+
+##### 04/10
+
+##### Science Direct
+
+### Busca
+Find articles with these terms: fake news detection
+Title, abstract or author-specified keywords: fake news
+Year(s): 2008-2019
+Article types: Review articles, research articles, data articles
+# 28 Resultados
+https://www.sciencedirect.com/search/advanced?qs=fake%20news%20detection&date=2008-2019&tak=fake%20news&articleTypes=REV%2CFLA%2CDAT&show=25&sortBy=relevance
+# USADO
+
+##### DOAJ
+
+### Busca
+Showing: Articles
+Title: fake news detection
+# 5 Resultados
+# https://doaj.org/search?source=%7B%22query%22%3A%7B%22filtered%22%3A%7B%22filter%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22term%22%3A%7B%22_type%22%3A%22article%22%7D%7D%5D%7D%7D%2C%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22fake%20news%20detection%22%2C%22default_operator%22%3A%22AND%22%2C%22default_field%22%3A%22bibjson.title%22%7D%7D%7D%7D%7D
+
+
+
+##### 06/10
+
+##### CAPES
+
+### Busca
+Busca: Contém "fake news" and Contém "detection"
+# 3.751 Resultados
+
+### Busca
+Busca: No título contém "fake news" and Contém "Data analysis"
+Data de publicação: Últimos 10 anos
+Tipo de material: Artigos
+Idioma: Inglês
+Data Inicial: 2008
+Data Inicial: 2019
+# 102 Resultados
+https://www-periodicos-capes-gov-br.ez317.periodicos.capes.gov.br/?option=com_pmetabusca&mn=88&smn=88&type=m&metalib=aHR0cHM6Ly9ybnAtcHJpbW8uaG9zdGVkLmV4bGlicmlzZ3JvdXAuY29tL3ByaW1vX2xpYnJhcnkvbGlid2ViL2FjdGlvbi9zZWFyY2guZG8/JnZpZD1DQVBFU19WMSZtb2RlPUFkdmFuY2Vk
+
+
+##### IEEE
+
+### Busca
+("Document Title":fake news detection) 
+# 28 Resultados
+
+
+##### ACM
+
+### Busca
+Select item from: The ACM Guide to Computing Literature
+Where: Título matches all of the following words or phrases fake news detection
+Where: Publication year is in the range 2008 to 2019
+# 32 Resultados
+https://dl.acm.org/results.cfm?query=acmdlTitle:(%252Bfake%20%252Bnews%20%252Bdetection)&within=owners.owner=GUIDE&filtered=&dte=2008&bfr=2019
+# USADO
+
+
+
+
+
+
+
+
