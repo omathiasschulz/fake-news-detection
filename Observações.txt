@@ -3,5 +3,4 @@ Observações:
 Long Short-Term Memory é uma versão atualiza do já existente
 Pode ser utilizado, mas é o mesmo autor já utilizado
 
-LSTM:
-https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
