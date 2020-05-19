@@ -1,6 +1,22 @@
-Observações:
+### Observações
 
 Long Short-Term Memory é uma versão atualiza do já existente
 Pode ser utilizado, mas é o mesmo autor já utilizado
+
+
+### TODO
+- Tentar mudar um pouco as referências sobre Fake News
+- Pesquisar mais sobre MLP
+- Ler o artigo e realizar ajustes
+- LATEX
+
+
+### Comentários para envio
+
+Realizei o ajuste no cronograma, coloquei apenas o que foi feito até agora, eu não removi o cronograma, vou ir ajutando ele de acordo como as etapas do TCC irem avançando.
+
+O dataset vai ser possível de obter, mas vou precisar construir na mão, entrei em contato com várias agências do estado, privadas e alguns professores. Até agora tudo o que consegui são notícias que eles postam nos próprios sites, até agora não achei ninguem que tenha um dataset pronto, eu mesmo vou montar, mas isso não será um problema, agora já conheço alguns sites que disponibilizam essas notícias para mim.
+
+A parte dos trabalhos correlatos eu finalizei.
 
 
