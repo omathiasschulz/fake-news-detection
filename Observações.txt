@@ -1,34 +1,9 @@
 ### Observações
 
-Long Short-Term Memory é uma versão atualiza do já existente
-Pode ser utilizado, mas é o mesmo autor já utilizado
-
 
 ### TODO
 - Tentar mudar um pouco as referências sobre Fake News
 - Pesquisar mais sobre MLP
 - Ler o artigo e realizar ajustes
 - LATEX
-
-
-### Comentários para envio
-
-Realizei o ajuste no cronograma, coloquei apenas o que foi feito até agora, eu não removi o cronograma, vou ir ajutando ele de acordo como as etapas do TCC irem avançando.
-
-O dataset vai ser possível de obter, mas vou precisar construir na mão, entrei em contato com várias agências do estado, privadas e alguns professores. Até agora tudo o que consegui são notícias que eles postam nos próprios sites, até agora não achei ninguem que tenha um dataset pronto, eu mesmo vou montar, mas isso não será um problema, agora já conheço alguns sites que disponibilizam essas notícias para mim.
-
-A parte dos trabalhos correlatos eu finalizei.
-
-Eu fiz alguns ajustes no texto sobre fake news, tentei colocar outros autores.
-
-Incrementei também a parte das redes neurais artificiais.
-
-Se o professor acha que ainda falta algo na fundamentação pode anotar que eu ajusto e incremento.
-
-Também estava pensando, acho que seria bom trazer na fundamentação a forma de conversão do texto em representação numérica para ser utilizado nas redes, por exemplo quais técnicas e bibliotecas que eu irei utilizar, deveria colocar né?
-
-Obs: Por algum motivo o sumário ficou quebrado, não faço ideia por que aconteceu isso, mais pra frente vou tentar mudar para latex
-
-
-
 
