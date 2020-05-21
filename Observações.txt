@@ -19,5 +19,16 @@ O dataset vai ser possível de obter, mas vou precisar construir na mão, entrei
 
 A parte dos trabalhos correlatos eu finalizei.
 
+Eu fiz alguns ajustes no texto sobre fake news, tentei colocar outros autores.
+
+Incrementei também a parte das redes neurais artificiais.
+
+Se o professor acha que ainda falta algo na fundamentação pode anotar que eu ajusto e incremento.
+
+Também estava pensando, acho que seria bom trazer na fundamentação a forma de conversão do texto em representação numérica para ser utilizado nas redes, por exemplo quais técnicas e bibliotecas que eu irei utilizar, deveria colocar né?
+
+Obs: Por algum motivo o sumário ficou quebrado, não faço ideia por que aconteceu isso, mais pra frente vou tentar mudar para latex
+
+
 
 
