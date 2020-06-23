@@ -1,9 +1,0 @@
-### Observações
-
-
-### TODO
-- Tentar mudar um pouco as referências sobre Fake News
-- Pesquisar mais sobre MLP
-- Ler o artigo e realizar ajustes
-- LATEX
-
