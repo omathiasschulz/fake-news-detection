@@ -12,10 +12,12 @@
 
 4.2.1.1 Numpy
 4.2.1.2 Pandas
-4.2.1.3 Seaborn
+4.2.1.3 Matplotlib
+4.2.1.4 Seaborn
+
 4.2.1.4 Doc2Vec
 4.2.1.5 NLTK
-4.2.1.6 Matplotlib (Talvez)
+
 4.2.1.7 Scikit Learn (Talvez)
 
 4.2.2 Funções de Ativação
@@ -26,5 +28,6 @@
 Com isso, é preciso buscar a melhor forma de conversão para representação numérica dos textos
 
 6 Resultados
+
 
 
