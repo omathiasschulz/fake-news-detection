@@ -28,26 +28,3 @@ Com isso, é preciso buscar a melhor forma de conversão para representação nu
 
 6 Resultados
 
-
-
-NLTK
-
-Outra biblioteca utilizada foi a Natural Language Toolkit (NLTK), a NLTK é
-uma biblioteca utilizada para a criação de programas Python para trabalhar com dados
-da linguagem humana. A partir dela é possı́vel realizar o processamento de texto para
-classificação, tokenização, stemming, marcação, análise e raciocı́nio semântico (NLTK,
-2019).
-
-NLTK; Natural Language Toolkit; Disponı́vel em: http://www.nltk.org/; Acesso em: 23/11/2019 14:44;
-
-
-
-Gensim
-
-O Gensim começou como uma coleção de vários scripts Python em 2008, servindo
-como base para gerar uma pequena lista dos artigos mais semelhantes a um determinado
-artigo. Atualmente, o Gensim é uma biblioteca robusta do Python para a realização de
-modelagem semântica não supervisionada a partir de texto sem formatação (Řehůřek,
-2019).
-
-REHUREK, Radim; Gensim = “Generate Similar”; Disponı́vel em: https://radimrehurek.com/gensim/about.html; Acesso em: 20/11/2019 às 22:31;
