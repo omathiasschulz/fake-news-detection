@@ -4,22 +4,24 @@
 
 4.1 Especificações Formais
 
-4.1.1 Dados Disponíveis
+4.1.1 Dados Disponíveis (Pronto)
 
-4.1.2 Tratamento/Normalização dos Dados
+4.1.2 Modelagem dos modelos de RNAs (Pronto)
+
+4.1.3 Tratamento dos Dados (Texto Pronto - Falta Imagens)
 
 
 4.2 Recursos Utilizados
 
-4.2.1 Bibliotecas
+4.2.1 Bibliotecas (Pronto)
 
-4.2.1.1  Numpy
-4.2.1.2  Pandas
-4.2.1.3  Matplotlib
-4.2.1.4  Seaborn
-4.2.1.5  NLTK
-4.2.1.6  Gensim
-4.2.1.7  Keras
+4.2.1.1  Numpy (Pronto)
+4.2.1.2  Pandas (Pronto)
+4.2.1.3  Matplotlib (Pronto)
+4.2.1.4  Seaborn (Pronto)
+4.2.1.5  NLTK (Pronto)
+4.2.1.6  Gensim (Pronto)
+4.2.1.7  Keras (Pronto)
 
 4.2.2 Validação Cruzada
 => Estou na dúvida se esse tópico faz parte dos Recursos Utilizados ou Especificações Formais
@@ -48,10 +50,10 @@
 ## Keras "Biblioteca de aprendizado profundo para Theano e TensorFlow"
 ## scikit-learn "Aprendizado de máquina fácil de usar e de uso geral em Python"
 
-from keras.layers import CuDNNLSTM, Bidirectional, GlobalMaxPooling1D, GlobalAveragePooling1D
+`from keras.layers import CuDNNLSTM, Bidirectional, GlobalMaxPooling1D, GlobalAveragePooling1D`
 https://www.kaggle.com/thousandvoices/simple-lstm
 
-from keras.layers import Dense, Embedding, LSTM, SpatialDropout1D
+`from keras.layers import Dense, Embedding, LSTM, SpatialDropout1D`
 https://www.kaggle.com/ngyptr/lstm-sentiment-analysis-keras
 
 ## Keras LSTM
