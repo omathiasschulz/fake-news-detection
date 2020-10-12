@@ -1,36 +1,25 @@
 
-4. Desenvolvimento
+4. DESENVOLVIMENTO
 
+4.1 DADOS DISPONÍVEIS (Pronto)
 
-4.1 Especificações Formais
-
-4.1.1 Dados Disponíveis (Pronto)
-
-4.1.2 Modelagem dos modelos de RNAs (Pronto)
-
-4.1.3 Tratamento dos Dados
+4.2 TRATAMENTO DOS DADOS
 (TODO) Texto Pronto - Falta Imagens
 
+4.3 RECURSOS UTILIZADOS
 
-4.2 Recursos Utilizados
+4.3.1 Bibliotecas (Pronto)
 
-4.2.1 Bibliotecas (Pronto)
-
-4.2.1.1  Numpy (Pronto)
+4.3.1.1  Numpy (Pronto)
 4.2.1.2  Pandas (Pronto)
-4.2.1.3  Matplotlib (Pronto)
-4.2.1.4  Seaborn (Pronto)
-4.2.1.5  NLTK (Pronto)
-4.2.1.6  Gensim (Pronto)
-4.2.1.7  Keras (Pronto)
+4.3.1.3  Matplotlib (Pronto)
+4.3.1.4  Seaborn (Pronto)
+4.3.1.5  NLTK (Pronto)
+4.3.1.6  Gensim (Pronto)
+4.3.1.7  Keras (Pronto)
 
-4.2.2 Validação Cruzada
-=> Estou na dúvida se esse tópico faz parte dos Recursos Utilizados ou Especificações Formais
-
-4.2.3 Funções de Ativação  (Texto quase pronto - Falta explicar as funções que serão utilizadas)
-
-(TODO) Explicar as funções de ativação que serão utilizadas
-
+4.3.1 Funções de Ativação
+(TODO) Texto quase pronto - Falta explicar as funções de ativação que serão utilizadas
 -- Funções Sigmóide e suas combinações geralmente funcionam melhor no caso de classificadores.
 -- Funções Sigmóide e Tanh às vezes são evitadas devido ao problema de Vanishing Gradient (que estudaremos no capítulo sobre redes neurais recorrentes).
 -- A função ReLU é uma função de ativação geral e é usada na maioria dos casos atualmente.
@@ -40,26 +29,31 @@
 -- De uma forma geral devemos preferir ELU > leaky ReLU > ReLU >> tanh > sigmoide
 -- Como esperado, as funções ReLU, Leaky ReLU e ELU são muito melhores do que as funções sigmoidais. Quanto às ativações sigmoidais, a função TanH é significantemente melhor do que a Sigmoide.
 
-4.2.4 Algoritmos de otimização
+4.3.2 Validação Cruzada
+(TODO)
 
-4.2.4.1 ADAM
+4.3.4 Algoritmos de otimização
+(TODO)
 
+4.3.4.1 ADAM
+(TODO)
 
-4.3 Representação Numérica dos Dados
+4.4 REPRESENTAÇÃO NUMÉRICA DOS DADOS
+(TODO)
 => É um tópico grande pois a representação numérica afeta os resultados
 É preciso buscar a melhor forma de conversão para representação numérica dos textos
 
-
-4.4 Índices para análise da qualidade da previsão
+4.5 ÍNDICES PARA ANÁLISE DA QUALIDADE DA DETECÇÃO
+(TODO)
 => Exemplo RMSE, mas ainda não sei quais vou usar certo
 
 
 
 
-1.1 LSTM
+# LSTM
 
-1.2 Keras "Biblioteca de aprendizado profundo para Theano e TensorFlow"
-1.2 scikit-learn "Aprendizado de máquina fácil de usar e de uso geral em Python"
+## Keras "Biblioteca de aprendizado profundo para Theano e TensorFlow"
+## scikit-learn "Aprendizado de máquina fácil de usar e de uso geral em Python"
 
 `from keras.layers import CuDNNLSTM, Bidirectional, GlobalMaxPooling1D, GlobalAveragePooling1D`
 https://www.kaggle.com/thousandvoices/simple-lstm
