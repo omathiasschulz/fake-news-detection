@@ -4,7 +4,7 @@
 4.1 DADOS DISPONÍVEIS (Pronto)
 
 4.2 TRATAMENTO DOS DADOS
-(TODO) Texto Pronto - Falta Imagens
+(TODO) - Melhorar a qualidade da imagem: Número de palavras de cada notícia
 
 4.3 RECURSOS UTILIZADOS
 
