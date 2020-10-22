@@ -3,8 +3,7 @@
 
 4.1 DADOS DISPONÍVEIS (Pronto)
 
-4.2 TRATAMENTO DOS DADOS
-(TODO) - Melhorar a qualidade da imagem: Número de palavras de cada notícia
+4.2 TRATAMENTO DOS DADOS (Pronto)
 
 4.3 RECURSOS UTILIZADOS
 
@@ -20,14 +19,21 @@
 
 4.3.1 Funções de Ativação
 (TODO) Texto quase pronto - Falta explicar as funções de ativação que serão utilizadas
--- Funções Sigmóide e suas combinações geralmente funcionam melhor no caso de classificadores.
--- Funções Sigmóide e Tanh às vezes são evitadas devido ao problema de Vanishing Gradient (que estudaremos no capítulo sobre redes neurais recorrentes).
--- A função ReLU é uma função de ativação geral e é usada na maioria dos casos atualmente.
--- Se encontrarmos um caso de neurônios deficientes em nossas redes, a função Leaky ReLU é a melhor escolha.
--- Tenha sempre em mente que a função ReLU deve ser usada apenas nas camadas ocultas.
--- Como regra geral, você pode começar usando a função ReLU e depois passar para outras funções de ativação no caso da ReLU não fornecer resultados ótimos.
--- De uma forma geral devemos preferir ELU > leaky ReLU > ReLU >> tanh > sigmoide
--- Como esperado, as funções ReLU, Leaky ReLU e ELU são muito melhores do que as funções sigmoidais. Quanto às ativações sigmoidais, a função TanH é significantemente melhor do que a Sigmoide.
+
+Começar com a função ReLU e depois passar para outras funções de ativação no caso da ReLU não forneça resultados ótimos
+De uma forma geral devemos preferir ELU > leaky ReLU > ReLU >> tanh > sigmoide
+As funções ReLU, Leaky ReLU e ELU são muito melhores do que as funções sigmoidais
+Quanto às ativações sigmoidais, a função TanH é significantemente melhor do que a Sigmoide
+-- Sigmóide
+Funciona melhor no caso de classificadores
+Às vezes é evitada devido ao problema de Vanishing Gradient
+-- Tanh
+Às vezes é evitada devido ao problema de Vanishing Gradient
+-- ReLU
+Função de ativação geral, utilizada na maioria dos casos atualmente
+Deve ser usada apenas nas camadas ocultas
+-- Leaky ReLU
+Boa para casos com neurônios deficientes nas redes
 
 4.3.2 Validação Cruzada
 (TODO)
@@ -40,26 +46,12 @@
 
 4.4 REPRESENTAÇÃO NUMÉRICA DOS DADOS
 (TODO)
-=> É um tópico grande pois a representação numérica afeta os resultados
-É preciso buscar a melhor forma de conversão para representação numérica dos textos
 
 4.5 ÍNDICES PARA ANÁLISE DA QUALIDADE DA DETECÇÃO
 (TODO)
 => Exemplo RMSE, mas ainda não sei quais vou usar certo
 
-
-
-
-# LSTM
-
-## Keras "Biblioteca de aprendizado profundo para Theano e TensorFlow"
-## scikit-learn "Aprendizado de máquina fácil de usar e de uso geral em Python"
-
-`from keras.layers import CuDNNLSTM, Bidirectional, GlobalMaxPooling1D, GlobalAveragePooling1D`
-https://www.kaggle.com/thousandvoices/simple-lstm
-
-`from keras.layers import Dense, Embedding, LSTM, SpatialDropout1D`
-https://www.kaggle.com/ngyptr/lstm-sentiment-analysis-keras
-
-## Keras LSTM
-https://keras.io/api/layers/recurrent_layers/lstm/
+5. RESULTADOS
+(TODO)
+=> LSTM => Keras 'Biblioteca de aprendizado profundo para Theano e TensorFlow'
+=> LSTM => scikit-learn 'Aprendizado de máquina fácil de usar e de uso geral em Python'
