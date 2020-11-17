@@ -55,3 +55,91 @@ Boa para casos com neurônios deficientes nas redes
 (TODO)
 => LSTM => Keras 'Biblioteca de aprendizado profundo para Theano e TensorFlow'
 => LSTM => scikit-learn 'Aprendizado de máquina fácil de usar e de uso geral em Python'
+
+
+
+# Trabalhos correlatos - Métricas e funções de ativação
+
+## 1
+
+Precision
+Recall
+F1_score
+Accuracy
+Confusion Matrix
+
+A saída do LSTM bidirecional passou por três camadas densas (512, 128, 4 unidades) separadas por um dropout.
+Usando a função de ativação soft-max na camada de saída, o resultado é uma classificação de postura (não relacionada, concordar, discordar ou discutir)
+Adam optimizer
+
+## 2
+
+precision recall fl-score support
+confusion matrix
+Accuracy
+
+A matriz de confusão tem a forma mostrada na Tabela 2. 0 é negativo e 1 é positivo. 
+Os seguintes termos foram usados: Verdadeiro negativo (TN), ou seja, a previsão foi negativa e os casos de teste também foram negativos; 
+Positivo verdadeiro (TP), ou seja, a previsão foi positiva e os casos de teste também foram positivos; 
+Falso negativo (FN), ou seja, a previsão foi negativa, mas os casos de teste foram realmente positivos; 
+e, finalmente, Falso Positivo (FP), ou seja, a previsão foi positiva, mas os casos de teste foram realmente negativos. 
+
+A Accuracy / precisão foi descrita conforme a fórmula: Precisão = (TP + TN) / Total
+
+Precision of a class
+how many of a class were predicted correctly / how many of the same class we totally predicted
+
+Recall of a class
+how many of a class were predicted correctly / how many of the same class are actually present
+
+F1-Score of a class
+Harmonic mean of precision and recall value
+
+Support of a class
+How many actual values of the class we had
+
+Loss: For loss of this model Refer Table 4. Binary Cross Entropy Loss and its minimized version using Adam Optimizer is depicted in Figures 6(a) and 6(b) respectively.
+
+
+Basic loss was based on Binary Cross Entropy Loss.
+
+Adam Optimizer
+
+Outras camadas incluem camada 1D de eliminação espacial, camada LSTM, camada densa (com RELU de ativação), camada de eliminação e a camada densa de saída, Sigmóide, com otimizador Adam. 
+O algoritmo de otimização Adam atualiza iterativamente os pesos dos parâmetros da rede com base em certos dados de treinamento.
+
+## 3
+
+Confusion matrix
+
+Hashing vectorizer
+Outro tipo usado na classificação de texto é o vetorizador de Hashing, que exige menos memória e mais rápido porque usa Hashes em vez de tokens. Ele fornece resultados de precisão melhorados do que o vetorizador TF-IDF usando Multinomial Naïve Bayes.
+
+Precision
+
+Accuracy
+
+Recall
+Recall also known as sensitivity is the fraction of significant instances that have been retrieved over the total amount of relevant instances.
+
+F1-SCORE
+F  score also F-score or F-measure is a measure of a test's accuracy for binary classification.
+
+
+Main functions in CNN are:
+ReLU
+Stands for Rectified Linear Unit for a non-linear operation. The output is ƒ(x) = max (0, x).
+REL U’s use is to introduce non-linearity in our CNN
+
+## 4
+
+Nada de mais
+
+## 5
+
+Para a rede LSTM, definimos o comprimento máximo de entrada como 500 com pós-preenchimento por zeros. 
+Cada sequência de entrada está embutida em vetores de 64 dimensões. 
+Cada uma das entradas incorporadas é então alimentada em uma rede LSTM com 100 unidades neurais. 
+A saída da rede LSTM é então passada para uma rede densa unidimensional com sigmóide como função de ativação. 
+O modelo é então compilado com o otimizador adam e binary_crossentropy usado como uma função de perda. 
+O modelo é então equipado com batch_size definido para 64 e 100 épocas.
