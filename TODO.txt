@@ -35,8 +35,7 @@ Deve ser usada apenas nas camadas ocultas
 -- Leaky ReLU
 Boa para casos com neurônios deficientes nas redes
 
-4.3.2 Validação Cruzada
-(TODO)
+4.3.3 Validação Cruzada (Pronto)
 
 4.3.4 Algoritmos de otimização
 (TODO)
@@ -143,3 +142,11 @@ Cada uma das entradas incorporadas é então alimentada em uma rede LSTM com 100
 A saída da rede LSTM é então passada para uma rede densa unidimensional com sigmóide como função de ativação. 
 O modelo é então compilado com o otimizador adam e binary_crossentropy usado como uma função de perda. 
 O modelo é então equipado com batch_size definido para 64 e 100 épocas.
+
+
+
++++ ATUALIZAÇÕES:
+- Removido o cronograma;
+- Pesquisado em pouco mais sobre funções de ativação;
+- Analisado o que os trabalhos correlatos utilizam de funções de ativação e métricas de desempenho;
+- Adicionado o tópico de validação cruzada;
