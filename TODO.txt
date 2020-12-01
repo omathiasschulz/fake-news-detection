@@ -147,6 +147,7 @@ O modelo é então equipado com batch_size definido para 64 e 100 épocas.
 
 +++ ATUALIZAÇÕES:
 - Removido o cronograma;
-- Pesquisado em pouco mais sobre funções de ativação;
+- Pesquisado um pouco mais sobre funções de ativação (ainda não foi colocado no artigo);
 - Analisado o que os trabalhos correlatos utilizam de funções de ativação e métricas de desempenho;
-- Adicionado o tópico de validação cruzada;
+- Adicionado o tópico Validação Cruzada;
+- Adicionado o tópico Algoritmos de Treinamento e o algoritmo Adam;
