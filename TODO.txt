@@ -1,24 +1,8 @@
-
-4. DESENVOLVIMENTO
-
-4.1 DADOS DISPONÍVEIS (Pronto)
-
-4.2 TRATAMENTO DOS DADOS (Pronto)
-
-4.3 RECURSOS UTILIZADOS
-
-4.3.1 Bibliotecas (Pronto)
-
-4.3.1.1  Numpy (Pronto)
-4.2.1.2  Pandas (Pronto)
-4.3.1.3  Matplotlib (Pronto)
-4.3.1.4  Seaborn (Pronto)
-4.3.1.5  NLTK (Pronto)
-4.3.1.6  Gensim (Pronto)
-4.3.1.7  Keras (Pronto)
++++ TÓPICOS QUE AINDA SERÃO COMPLEMENTADOS
 
 4.3.1 Funções de Ativação
-(TODO) Texto quase pronto - Falta explicar as funções de ativação que serão utilizadas
+(TODO)
+Texto quase pronto - Falta explicar as funções de ativação que serão utilizadas
 
 Começar com a função ReLU e depois passar para outras funções de ativação no caso da ReLU não forneça resultados ótimos
 De uma forma geral devemos preferir ELU > leaky ReLU > ReLU >> tanh > sigmoide
@@ -35,26 +19,9 @@ Deve ser usada apenas nas camadas ocultas
 -- Leaky ReLU
 Boa para casos com neurônios deficientes nas redes
 
-+++ Motangem dos modelos
-Utilizaram bastante a função de ativaçãoReLU
-
-- 1
-A saída do LSTM bidirecional passou por três camadas densas (512, 128, 4 unidades) separadas por um dropout.
-Usando a função de ativação soft-max na camada de saída, o resultado é uma classificação de postura (não relacionada, concordar, discordar ou discutir)
-Adam optimizer
-
-- 2
-Utilizou ativação RELU em algumas camadas, quais não deu pra entender
-Camada de saída, Sigmóide, com otimizador Adam
-
-4.3.3 Validação Cruzada (Pronto)
-
-4.3.4 Algoritmos de otimização (Pronto)
-
-4.3.4.1 Adam (Pronto)
-
 4.4 REPRESENTAÇÃO NUMÉRICA DOS DADOS
 (TODO)
+Explicar qual biblioteca foi utilizada, os diferentes testes e resultados.
 
 4.5 ÍNDICES PARA ANÁLISE DA QUALIDADE DA DETECÇÃO
 (TODO)
@@ -79,8 +46,7 @@ Falso Positivo (FP): A previsão foi positiva, mas os casos de teste foram realm
 
 5. RESULTADOS
 (TODO)
-=> LSTM => Keras 'Biblioteca de aprendizado profundo para Theano e TensorFlow'
-=> LSTM => scikit-learn 'Aprendizado de máquina fácil de usar e de uso geral em Python'
+LSTM Keras***
 
 
 
@@ -90,3 +56,19 @@ Falso Positivo (FP): A previsão foi positiva, mas os casos de teste foram realm
 - Analisado o que os trabalhos correlatos utilizam de funções de ativação e métricas de desempenho;
 - Adicionado o tópico Validação Cruzada;
 - Adicionado o tópico Algoritmos de Treinamento e o algoritmo Adam;
+- Adicionado o tópico de Representação Numérica dos Dados;
+- Melhorado o tópico de Tratamento dos Dados;
+
+
+
++++ Montagem dos modelos
+Utilizaram bastante a função de ativação ReLU
+
+- 1
+A saída do LSTM bidirecional passou por três camadas densas (512, 128, 4 unidades) separadas por um dropout.
+Usando a função de ativação soft-max na camada de saída, o resultado é uma classificação de postura (não relacionada, concordar, discordar ou discutir)
+Adam optimizer
+
+- 2
+Utilizou ativação RELU em algumas camadas, quais não deu pra entender
+Camada de saída, Sigmóide, com otimizador Adam
