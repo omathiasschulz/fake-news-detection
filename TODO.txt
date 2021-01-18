@@ -25,39 +25,43 @@ Explicar qual biblioteca foi utilizada, os diferentes testes e resultados.
 
 4.5 ÍNDICES PARA ANÁLISE DA QUALIDADE DA DETECÇÃO
 (TODO)
-=> Exemplo RMSE, mas ainda não sei quais vou usar certo
-
-- Precision
-
-- Recall
-A recuperação, também conhecida como sensibilidade, é a fração de ocorrências significativas que foram recuperadas sobre a quantidade total de ocorrências relevantes.
-
-- F1-Score
-Pontuação F também pontuação F ou medida F é uma medida da precisão de um teste para classificação binária.
-
-- Accuracy
-
-- Matriz de Confusão
-0 é negativo e 1 é positivo.
-Verdadeiro Negativo (TN): A previsão foi negativa e os casos de teste também foram negativos;
-Verdadeiro Positivo (TP): A previsão foi positiva e os casos de teste também foram positivos;
-Falso negativo (FN): A previsão foi negativa, mas os casos de teste foram realmente positivos;
-Falso Positivo (FP): A previsão foi positiva, mas os casos de teste foram realmente negativos;
+Métricas:
+Loss, Accuracy model (%), Accuracy detection (%), MAPE, RMSE, Matriz de Confusão
 
 5. RESULTADOS
 (TODO)
-LSTM Keras***
 
 
 
-+++ ATUALIZAÇÕES:
-- Removido o cronograma;
-- Pesquisado um pouco mais sobre funções de ativação (ainda não foi colocado no artigo);
-- Analisado o que os trabalhos correlatos utilizam de funções de ativação e métricas de desempenho;
-- Adicionado o tópico Validação Cruzada;
-- Adicionado o tópico Algoritmos de Treinamento e o algoritmo Adam;
-- Adicionado o tópico de Representação Numérica dos Dados;
-- Melhorado o tópico de Tratamento dos Dados;
++++ ANALISE DE DADOS
+
+- Tamanho dos textos por tipo de notícia fake/true
+
+- Work cloud of fake news
+
+- Work cloud of true news
+
+- Exemplos de stopwords
+
+- Listar o top 25 palavras nos textos: Todos, true e false
+from collections import Counter 
+counter = Counter(all_words)
+counter.most_common(25)
+counted_words = Counter(all_words)
+words = []
+counts = []
+for letter, count in counted_words.most_common(25):
+    words.append(letter)
+    counts.append(count)
+colors = cm.rainbow(np.linspace(0, 1, 10))
+rcParams['figure.figsize'] = 20, 10
+plt.title('Top words in Text')
+plt.xlabel('Count')
+plt.ylabel('Words')
+plt.barh(words, counts, color=colors)
+
+- Exemplos de palavras semelhantes
+w2v_model.wv.most_similar("fbi")
 
 
 
@@ -72,3 +76,52 @@ Adam optimizer
 - 2
 Utilizou ativação RELU em algumas camadas, quais não deu pra entender
 Camada de saída, Sigmóide, com otimizador Adam
+
+- 3 MODELO LSTM
+Adicionei uma camada de Dropout para mitigar problemas de sobreajuste
+
+Uma adição à configuração necessária é que uma camada LSTM antes de cada camada LSTM subsequente retorne a sequência,
+o que pode ser feito definindo o parâmetro “return_sequences = True” na(s) camada(s) anterior(es).
+
+
+
++++ SAVE MODEL
+#
+# # Definir modelo
+# model = Sequential()
+# model.add(LSTM(...))
+# # Compilar modelo
+# model.compile(...)
+# # Ajustar modelo
+# model.fit(...)
+# # Salvar modelo em arquivo
+# model.save('nome_arquivo.h5')
+#
+# from keras.models import load_model
+# # Carregar modelo de arquivo
+# model = load_model('nome_arquivo.h5')
+
+
+
++++ ATUALIZAÇÕES:
+- Removido o cronograma;
+- Pesquisado um pouco mais sobre funções de ativação (ainda não foi colocado no artigo);
+- Analisado o que os trabalhos correlatos utilizam de funções de ativação e métricas de desempenho;
+- Adicionado o tópico Validação Cruzada;
+- Adicionado o tópico Algoritmos de Treinamento e o algoritmo Adam;
+- Adicionado o tópico de Representação Numérica dos Dados;
+- Melhorado o tópico de Tratamento dos Dados;
+
+
+
++++ Dúvidas
+- keras Dense é o modelo MLP?
+- Dropout se encaixa como uma camada ou não seria bem isso, é algo mais simples?
+- Outra coisa que achei estranho, posso misturar camadas Dense com LSTM, os exemplo de modelos LSTM que achei utilizam Dense
+- O que eu achei estranho, eu posso criar um modelo keras que tem só uma camada, mas na teoria deveria existir pelo menos três, entrada, uma intermediária e saída
+
+
+
+
+
+
