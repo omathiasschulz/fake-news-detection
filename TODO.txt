@@ -19,9 +19,7 @@ Deve ser usada apenas nas camadas ocultas
 -- Leaky ReLU
 Boa para casos com neurônios deficientes nas redes
 
-4.4 REPRESENTAÇÃO NUMÉRICA DOS DADOS
-(TODO)
-Explicar qual biblioteca foi utilizada, os diferentes testes e resultados.
+funcoes = [Model.ATIVACAO_SIGMOID, Model.ATIVACAO_TANH, Model.ATIVACAO_RELU, Model.ATIVACAO_ELU]
 
 4.5 ÍNDICES PARA ANÁLISE DA QUALIDADE DA DETECÇÃO
 (TODO)
@@ -65,26 +63,6 @@ w2v_model.wv.most_similar("fbi")
 
 
 
-+++ Montagem dos modelos
-Utilizaram bastante a função de ativação ReLU
-
-- 1
-A saída do LSTM bidirecional passou por três camadas densas (512, 128, 4 unidades) separadas por um dropout.
-Usando a função de ativação soft-max na camada de saída, o resultado é uma classificação de postura (não relacionada, concordar, discordar ou discutir)
-Adam optimizer
-
-- 2
-Utilizou ativação RELU em algumas camadas, quais não deu pra entender
-Camada de saída, Sigmóide, com otimizador Adam
-
-- 3 MODELO LSTM
-Adicionei uma camada de Dropout para mitigar problemas de sobreajuste
-
-Uma adição à configuração necessária é que uma camada LSTM antes de cada camada LSTM subsequente retorne a sequência,
-o que pode ser feito definindo o parâmetro “return_sequences = True” na(s) camada(s) anterior(es).
-
-
-
 +++ SAVE MODEL
 #
 # # Definir modelo
@@ -108,17 +86,106 @@ o que pode ser feito definindo o parâmetro “return_sequences = True” na(s) 
 - Pesquisado um pouco mais sobre funções de ativação (ainda não foi colocado no artigo);
 - Analisado o que os trabalhos correlatos utilizam de funções de ativação e métricas de desempenho;
 - Adicionado o tópico Validação Cruzada;
-- Adicionado o tópico Algoritmos de Treinamento e o algoritmo Adam;
+- Adicionado o tópico Algoritmos de Treinamento e o algoritmo 
+Adam;
 - Adicionado o tópico de Representação Numérica dos Dados;
 - Melhorado o tópico de Tratamento dos Dados;
 
 
 
-+++ Dúvidas
-- keras Dense é o modelo MLP?
-- Dropout se encaixa como uma camada ou não seria bem isso, é algo mais simples?
-- Outra coisa que achei estranho, posso misturar camadas Dense com LSTM, os exemplo de modelos LSTM que achei utilizam Dense
-- O que eu achei estranho, eu posso criar um modelo keras que tem só uma camada, mas na teoria deveria existir pelo menos três, entrada, uma intermediária e saída
+    # A camada de Dropout serve para mitigar problemas de sobreajuste
+    # Uma camada LSTM antes de cada camada LSTM subsequente deve retornar a sequência
+    # O que pode ser feito definindo o parâmetro "return_sequences = True" na(s) camada(s) anterior(es)
+
+
+
+
+
+
+
+
+5  RESULTADOS
+Neste capítulo inicialmente é apresentado o treinamento do modelo MLP com diferentes configurações e os resultados obtidos para detecção de fake news. Em seguida, é apresentado o treinamento do modelo LSTM com diferentes configurações e os resultados obtidos para detecção de fake news. Dessa forma, com os resultados dos dois modelos obtidos são analisados e comparados as configurações que obtiveram melhores desempenhos com o objetivo de escolher a melhor rede para detecção.
+
+5.1  MODELO MLP
+
+Esse capítulo apresenta o treinamento e resultado das diferentes configurações realizadas com o modelo MLP (Multilayer Perceptron).
+
+5.2  MODELO LSTM
+Esse capítulo apresenta o treinamento e resultado das diferentes configurações realizadas com o modelo LSTM (Long Short Term Memory).
+
+
+
+
+
+Funções de Ativação
+
+As funções de ativação são essenciais para dar capacidade representativa às redes neurais artificiais, introduzindo um componente de não linearidade.
+
+Uma rede neural artificial sem função ativação, é simplesmente um modelo de regressão linear.
+
+Entretanto, a utilização de funções de ativação também possibilita o surgimento de outros problemas. Por exemplo, algumas funções de ativação tornam mais evidente o problema de gradientes explodindo ou desvanecendo.
+
+devemos preferir ELU > leaky ReLU > ReLU >> tanh > sigmoide
+
+https://matheusfacure.github.io/2017/07/12/activ-func/
+Matheus Facure
+Funções de Ativação
+Entendendo a importância da ativação correta nas redes neurais.
+12/07/2017
+26/01/2020 - 09:27
+
+
+
+Os círculos negros na imagem acima são neurônios. Cada neurônio é caracterizado pelo peso, bias e a função de ativação. Os dados de entrada são alimentados na camada de entrada. Os neurônios fazem uma transformação linear na entrada pelos pesos e bias. A transformação não linear é feita pela função de ativação. A informação se move da camada de entrada para as camadas ocultas. As camadas ocultas fazem o processamento e enviam a saída final para a camada de saída. Este é o movimento direto da informação conhecido como propagação direta. Mas e se o resultado gerado estiver longe do valor esperado? Em uma rede neural, atualizaríamos os pesos e bias dos neurônios com base no erro. Este processo é conhecido como backpropagation. Uma vez que todos os dados passaram por este processo, os pesos e bias finais são usados para previsões.
+
+As funções de ativação são um elemento extremamente importante das redes neurais artificiais. Elas basicamente decidem se um neurônio deve ser ativado ou não. Ou seja, se a informação que o neurônio está recebendo é relevante para a informação fornecida ou deve ser ignorada. Veja na fórmula abaixo como a função de ativação é mais uma camada matemática no processamento.
+
+A função de ativação é a transformação não linear que fazemos ao longo do sinal de entrada. Esta saída transformada é então enviada para a próxima camada de neurônios como entrada. Quando não temos a função de ativação, os pesos e bias simplesmente fazem uma transformação linear. Uma equação linear é simples de resolver, mas é limitada na sua capacidade de resolver problemas complexos. Uma rede neural sem função de ativação é essencialmente apenas um modelo de regressão linear. A função de ativação faz a transformação não-linear nos dados de entrada, tornando-o capaz de aprender e executar tarefas mais complexas. Queremos que nossas redes neurais funcionem em tarefas complicadas, como traduções de idiomas (Processamento de Linguagem Natural) e classificações de imagens (Visão Computacional). As transformações lineares nunca seriam capazes de executar tais tarefas.
+
+Funções Sigmóide e suas combinações geralmente funcionam melhor no caso de classificadores.
+Funções Sigmóide e Tanh às vezes são evitadas devido ao problema de Vanishing Gradient (que estudaremos no capítulo sobre redes neurais recorrentes).
+A função ReLU é uma função de ativação geral e é usada na maioria dos casos atualmente.
+Se encontrarmos um caso de neurônios deficientes em nossas redes, a função Leaky ReLU é a melhor escolha.
+Tenha sempre em mente que a função ReLU deve ser usada apenas nas camadas ocultas.
+Como regra geral, você pode começar usando a função ReLU e depois passar para outras funções de ativação no caso da ReLU não fornecer resultados ótimos.
+
+http://deeplearningbook.com.br/funcao-de-ativacao/
+Data Science Academy. Deep Learning Book, 2019. Disponível em: <http://www.deeplearningbook.com.br/>. Acesso em: 10 Abril. 2019.
+
+
+
+Neste experimento, vamos investigar o efeito do tamanho do lote (Batch Size) na dinâmica de treinamento. Tamanho do lote (Batch Size) é um termo usado em aprendizado de máquina e refere-se ao número de exemplos de treinamento usados em uma iteração. O Batch Size pode ser uma das três opções:
+
+batch mode: onde o tamanho do lote é igual ao conjunto de dados total, tornando os valores de iteração e épocas equivalentes.
+mini-batch mode: onde o tamanho do lote é maior que um, mas menor que o tamanho total do conjunto de dados. Geralmente, um número que pode ser dividido no tamanho total do conjunto de dados.
+stochastic mode: onde o tamanho do lote é igual a um. Portanto, o gradiente e os parâmetros da rede neural são atualizados após cada amostra.
+
+http://deeplearningbook.com.br/o-efeito-do-batch-size-no-treinamento-de-redes-neurais-artificiais/
+
+
+
+# Testes com o modelo MLP
+Uma camada de entrada, uma camada de saída e uma camada intermediária
+MLP sempre terá 3 camadas, a camada de entrada, uma camada intermediária e a camada de saída
+
+O primeiro teste realizado foi alterando as funções de ativação do modelo - Funções de ativação
+Todos os modelos possuem:
+"epochs": 50
+"batch_size": 10
+"layers": [{"qtd_neurons": 12}, {"qtd_neurons": 8}, {"qtd_neurons": 1}]}
+A tabela mostra nas colunas de acurácia, quando está verde é porque é maior que 95%
+e loss <= 0,13
+
+O segundo teste é realizado pegando um dos melhores modelos do primeiro teste e utilizado a quantidade de neurônios variada
+
+Batch size
+
+# Teste MLP - 2021-01-28 09:12:54.230192 - dataset_50_palavras.csv
+{"epochs": 50, "batch_size": 10, "layers": [{"qtd_neurons": 12, "activation": "tanh"}, {"qtd_neurons": 8, "activation": "relu"}, {"qtd_neurons": 1, "activation": "tanh"}]}
+métricas: loss: 0.13; accuracy_model(%): 95.14; accuracy_detection(%): 95.33; mape: 73649264.00; rmse: 0.10; confusion_matrix: 3411-188-132-3122;
+
+
 
 
 
