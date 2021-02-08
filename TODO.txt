@@ -1,10 +1,5 @@
 +++ TÓPICOS QUE AINDA SERÃO COMPLEMENTADOS
 
-4.5 ÍNDICES PARA ANÁLISE DA QUALIDADE DA DETECÇÃO
-(TODO)
-Métricas:
-Loss, Accuracy model (%), Accuracy detection (%), MAPE, RMSE, Matriz de Confusão
-
 5. RESULTADOS
 (TODO)
 
@@ -116,6 +111,9 @@ A tabela mostra nas colunas de acurácia, quando está verde é porque é maior 
 e loss <= 0,13
 
 O segundo teste é realizado pegando um dos melhores modelos do primeiro teste e utilizado a quantidade de neurônios variada
+
+
+
 
 
 
