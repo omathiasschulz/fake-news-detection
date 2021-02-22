@@ -1,9 +1,3 @@
-+++ TÓPICOS QUE AINDA SERÃO COMPLEMENTADOS
-
-5. RESULTADOS
-(TODO)
-
-
 
 +++ BONUS - ANALISE DE DADOS
 
@@ -52,68 +46,6 @@ w2v_model.wv.most_similar("fbi")
 # from keras.models import load_model
 # # Carregar modelo de arquivo
 # model = load_model('nome_arquivo.h5')
-
-
-
-+++ ATUALIZAÇÕES:
-- Removido o cronograma;
-- Pesquisado um pouco mais sobre funções de ativação (ainda não foi colocado no artigo);
-- Analisado o que os trabalhos correlatos utilizam de funções de ativação e métricas de desempenho;
-- Adicionado o tópico Validação Cruzada;
-- Adicionado o tópico Algoritmos de Treinamento e o algoritmo 
-Adam;
-- Adicionado o tópico de Representação Numérica dos Dados;
-- Melhorado o tópico de Tratamento dos Dados;
-
-
-
-
-
-
-
-
-
-
-5  RESULTADOS
-Neste capítulo inicialmente é apresentado o treinamento do modelo MLP com diferentes configurações e os resultados obtidos para detecção de fake news. Em seguida, é apresentado o treinamento do modelo LSTM com diferentes configurações e os resultados obtidos para detecção de fake news. Dessa forma, com os resultados dos dois modelos obtidos são analisados e comparados as configurações que obtiveram melhores desempenhos com o objetivo de escolher a melhor rede para detecção.
-
-5.1  MODELO MLP
-
-Esse capítulo apresenta o treinamento e resultado das diferentes configurações realizadas com o modelo MLP (Multilayer Perceptron).
-
-5.2  MODELO LSTM
-Esse capítulo apresenta o treinamento e resultado das diferentes configurações realizadas com o modelo LSTM (Long Short Term Memory).
-
-MODELO LSTM
-A camada de Dropout serve para mitigar problemas de sobreajuste
-Uma camada LSTM antes de cada camada LSTM subsequente deve retornar a sequência
-O que pode ser feito definindo o parâmetro "return_sequences = True" na(s) camada(s) anterior(es)
-
-BATCH SIZE
-Neste experimento, vamos investigar o efeito do tamanho do lote (Batch Size) na dinâmica de treinamento. Tamanho do lote (Batch Size) é um termo usado em aprendizado de máquina e refere-se ao número de exemplos de treinamento usados em uma iteração. O Batch Size pode ser uma das três opções:
-
-batch mode: onde o tamanho do lote é igual ao conjunto de dados total, tornando os valores de iteração e épocas equivalentes.
-mini-batch mode: onde o tamanho do lote é maior que um, mas menor que o tamanho total do conjunto de dados. Geralmente, um número que pode ser dividido no tamanho total do conjunto de dados.
-stochastic mode: onde o tamanho do lote é igual a um. Portanto, o gradiente e os parâmetros da rede neural são atualizados após cada amostra.
-
-http://deeplearningbook.com.br/o-efeito-do-batch-size-no-treinamento-de-redes-neurais-artificiais/
-
-TESTE MODELO MLP
-Uma camada de entrada, uma camada de saída e uma camada intermediária
-MLP sempre terá 3 camadas, a camada de entrada, uma camada intermediária e a camada de saída
-
-O primeiro teste realizado foi alterando as funções de ativação do modelo - Funções de ativação
-Todos os modelos possuem:
-"epochs": 50
-"batch_size": 10
-"layers": [{"qtd_neurons": 12}, {"qtd_neurons": 8}, {"qtd_neurons": 1}]}
-A tabela mostra nas colunas de acurácia, quando está verde é porque é maior que 95%
-e loss <= 0,13
-
-O segundo teste é realizado pegando um dos melhores modelos do primeiro teste e utilizado a quantidade de neurônios variada
-
-
-
 
 
 
